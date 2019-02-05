@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a simple div </title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: tahoma;
+            color: #444;
+        }
+
+        section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 400px;
+            width: 1200px;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+        }
+
+        .content{
+            width: calc(50% - 50px);
+            height: 100%;
+            background-color: white;
+            padding: 2% 5%;
+            line-height: 1.5em;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .imagebox{
+            width: calc(50% + 50px);
+            height: 100%;
+            background-color: #ff0;
+            border-left: 100px solid white;
+            border-bottom: 400px solid transparent;
+            background: url('./img/1.png');
+            background-position: -150px 0px;
+        }
+    </style>
+</head>
+<body>
+    <section class="skewbox">
+        <div class="content">
+            <h1>Amanda Renj</h1>
+            <p>
+                Holden's first television appearance was as a contestant
+                 on the game show Blind Date in 1991. From 2006 to 2008, 
+                 Holden appeared as Sarah Trevanian in three series of 
+                 ITV's Wild at Heart co-starring Stephen Tompkinson.
+                Holden's other TV credits include three series 
+                of the comedy Kiss Me Kate with Caroline Quentin and Chris 
+                Langham, three series of the ITV's The Grimleys, Celeb with Harry 
+                Enfield, BBC series Hearts and Bones with Damian Lewis, 
+                the Jonathan Creek episode
+            </p>
+        </div>
+        <div class="imagebox">
+
+        </div>
+    </section>
+</body>
+</html>
